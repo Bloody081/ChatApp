@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Chat Login</title>
+</h:head>
+<h:body>
+    <h:form>
+        <h:panelGrid columns="2">
+            <h:outputLabel value="Enter your name: " />
+            <h:inputText value="#{chatBean.username}" required="true" />
+            <h:commandButton value="Login" action="#{chatBean.login}" />
+        </h:panelGrid>
+        <h:messages />
+    </h:form>
+</h:body>
+</html>
